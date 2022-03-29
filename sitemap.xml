@@ -32,14 +32,35 @@
     </url>
 
     <url>
-        <loc>https://foxautospanoco.com/gallery-Interior-Detailing</loc>
+        <loc>https://foxautospanoco.com/gallery-Videos</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://foxautospanoco.com/gallery-Exterior-Detailing</loc>
+        <loc>https://foxautospanoco.com/gallery-Ceramic-Coating</loc>
+        <lastmod>2022-03-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://foxautospanoco.com/gallery-Ceramic-Pro</loc>
+        <lastmod>2022-03-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://foxautospanoco.com/gallery-Window-Tint</loc>
+        <lastmod>2022-03-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://foxautospanoco.com/gallery-Vinyl-Wrap</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -67,35 +88,7 @@
     </url>
 
     <url>
-        <loc>https://foxautospanoco.com/service-Paint-Correction</loc>
-        <lastmod>2022-03-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://foxautospanoco.com/service-Exterior-Detailing</loc>
-        <lastmod>2022-03-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://foxautospanoco.com/service-Paint-Restoration</loc>
-        <lastmod>2022-03-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://foxautospanoco.com/service-Paint-Protection-Film</loc>
-        <lastmod>2022-03-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://foxautospanoco.com/service-Full-Detail-Service</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
