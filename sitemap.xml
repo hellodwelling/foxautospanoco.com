@@ -32,7 +32,7 @@
     </url>
 
     <url>
-        <loc>https://foxautospanoco.com/gallery-Videos</loc>
+        <loc>https://foxautospanoco.com/gallery-Window-Tint</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -53,13 +53,6 @@
     </url>
 
     <url>
-        <loc>https://foxautospanoco.com/gallery-Window-Tint</loc>
-        <lastmod>2022-03-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://foxautospanoco.com/gallery-Vinyl-Wrap</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
@@ -67,7 +60,7 @@
     </url>
 
     <url>
-        <loc>https://foxautospanoco.com/service-Window-Tinting</loc>
+        <loc>https://foxautospanoco.com/gallery-Videos</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -75,6 +68,13 @@
 
     <url>
         <loc>https://foxautospanoco.com/service-Vinyl-Wrapping</loc>
+        <lastmod>2022-03-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://foxautospanoco.com/service-Window-Tinting</loc>
         <lastmod>2022-03-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
