@@ -449,7 +449,7 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &quot;Window Tinting is a tailored service that provides knowledgeable and licensed professionals to tint your car windows. We understand that everyone&#x27;s needs are different, so we offer a variety of options to choose from to ensure you get the best possible service.&quot;, &#x27;copy&#x27;: &#x27;Window Tinting&#x27;, &#x27;href&#x27;: &#x27;service-Window-Tinting&#x27;}, {&#x27;title&#x27;: &#x27;We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate. &#x27;, &#x27;copy&#x27;: &#x27;Vinyl Wrapping&#x27;, &#x27;href&#x27;: &#x27;service-Vinyl-Wrapping&#x27;}, {&#x27;title&#x27;: &#x27;The Ceramic Coating service is an expert, thorough, and professional service that will coat your car with a ceramic layer that will protect it from the elements.&#x27;, &#x27;copy&#x27;: &#x27;Ceramic Coating&#x27;, &#x27;href&#x27;: &#x27;service-Ceramic-Coating&#x27;}, {&#x27;title&#x27;: &#x27;Paint Protection Film service provides an easy and affordable way to protect your vehicle. Our team of experts will work with you to choose the perfect color and design for your vehicle. We use only the highest quality materials and products, so you can be sure your car will look great for years to come&#x27;, &#x27;copy&#x27;: &#x27;Paint Protection Film&#x27;, &#x27;href&#x27;: &#x27;service-Paint-Protection-Film&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &quot;Window Tinting is a tailored service that provides knowledgeable and licensed professionals to tint your car windows. We understand that everyone&#x27;s needs are different, so we offer a variety of options to choose from to ensure you get the best possible service.&quot;, &#x27;copy&#x27;: &#x27;Window Tinting&#x27;, &#x27;href&#x27;: &#x27;service-Window-Tinting&#x27;}, {&#x27;title&#x27;: &#x27;We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate.&#x27;, &#x27;copy&#x27;: &#x27;Vinyl Wrapping&#x27;, &#x27;href&#x27;: &#x27;service-Vinyl-Wrapping&#x27;}, {&#x27;title&#x27;: &#x27;The Ceramic Coating service is an expert, thorough, and professional service that will coat your car with a ceramic layer that will protect it from the elements.&#x27;, &#x27;copy&#x27;: &#x27;Ceramic Coating&#x27;, &#x27;href&#x27;: &#x27;service-Ceramic-Coating&#x27;}, {&#x27;title&#x27;: &#x27;Paint Protection Film service provides an easy and affordable way to protect your vehicle. Our team of experts will work with you to choose the perfect color and design for your vehicle. We use only the highest quality materials and products, so you can be sure your car will look great for years to come&#x27;, &#x27;copy&#x27;: &#x27;Paint Protection Film&#x27;, &#x27;href&#x27;: &#x27;service-Paint-Protection-Film&#x27;}]"> -->
                                                   
                                                     <a
                                                         href=" service-Window-Tinting "
@@ -467,7 +467,7 @@
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
                                                     >
-                                                        <!-- <p class="text-base font-medium text-gray-900">We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate. </p> -->
+                                                        <!-- <p class="text-base font-medium text-gray-900">We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate.</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Vinyl Wrapping</p>
                                                     </a>
                                                 <!-- </each> -->
@@ -825,7 +825,7 @@
                                             <!-- </each> -->
                                             
                                                 <a href="service-Vinyl-Wrapping" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate. </p> -->
+                                                    <!-- <p class="text-base font-medium text-gray-900">We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate.</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Vinyl Wrapping</p>
                                                 </a>
                                             <!-- </each> -->
@@ -1061,48 +1061,11 @@
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
-    }"
-        x-init="loop"
-        class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-    >
+        }"
+            x-init="loop"
+            class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+        >
         <!-- Transition Wrapper 1 -->
-        <!-- <div
-            class="absolute inset-0"
-            x-show="activeImage === 1"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/32dd878c-d0ec-4a63-8c23-8336880b00ee.mp4"
-                alt=""
-            />
-        </div> -->
-        <!-- Transition Wrapper 2 -->
-        <!-- TODO: Add x-cloak to all transition wrappers exept the first one to avoid a flashing on load -->
-        <!-- <div
-            x-cloak
-            class="absolute inset-0"
-            x-show="activeImage === 2"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80"
-                alt=""
-            />
-        </div> -->
-
-        
         <div
             class="absolute inset-0"
             x-show="activeImage === 1"
@@ -1113,15 +1076,13 @@
             x-transition:leave-start="transform"
             x-transition:leave-end="transform -translate-x-full"
         >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/32dd878c-d0ec-4a63-8c23-8336880b00ee.mp4"
-                loading="lazy"
-                alt="Auto Detailing company Fox Auto Spa / Ceramic Pro in Greeley, CO"
-            />
-        </div>
         
-        <!-- More images here -->
+            <video class="object-contain w-full lg:absolute h-80 lg:h-full" autoplay loop playsinline muted>
+            <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/edbd409feb661fa9200088c7d63edd92_video-converter.com.mp4" type = "video/mp4" >
+            </video>
+        
+            
+        </div>
     </div>
     
 </div>
@@ -1218,7 +1179,7 @@
                               
                           >
                               
-                              <video class="w-auto h-auto max-h-full max-w-full" autoplay loop playsinline>
+                              <video class="w-auto h-auto max-h-full max-w-full" autoplay loop muted playsinline>
                                   <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/79d11468-f71e-4949-aa48-531bd6cdd7bd.mp4" type = "video/mp4" >
                               </video>
                               
@@ -1478,7 +1439,7 @@
                                     -webkit-line-clamp: 5;
                                     -webkit-box-orient: vertical;  "
                                 >
-                                    We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate. 
+                                    We offer custom vinyl wrapping design and installation to help protect your car for years to come. Reach out for a free estimate.
                                 </p>
                             </div>
 
@@ -2623,7 +2584,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48285"
+                                aria-controls="48291"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2643,7 +2604,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48285">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48291">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +1 970-415-6270. Thanks!</p>
                         </dd>
@@ -2656,7 +2617,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48286"
+                                aria-controls="48292"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2676,7 +2637,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48286">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48292">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2689,7 +2650,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48287"
+                                aria-controls="48293"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2709,7 +2670,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48287">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48293">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3298,46 +3259,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167506"
-                                                    name="167506"
+                                                    id="contact-service-167514"
+                                                    name="167514"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-167506" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-167514" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167507"
-                                                    name="167507"
+                                                    id="contact-service-167515"
+                                                    name="167515"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-167507" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-167515" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167508"
-                                                    name="167508"
+                                                    id="contact-service-167516"
+                                                    name="167516"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-167508" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-167516" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167509"
-                                                    name="167509"
+                                                    id="contact-service-167517"
+                                                    name="167517"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-167509" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-167517" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
@@ -3369,46 +3330,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167506"
-                                                    name="167506"
+                                                    id="contact-service-167514"
+                                                    name="167514"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-167506" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-167514" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167507"
-                                                    name="167507"
+                                                    id="contact-service-167515"
+                                                    name="167515"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-167507" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-167515" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167508"
-                                                    name="167508"
+                                                    id="contact-service-167516"
+                                                    name="167516"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-167508" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-167516" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167509"
-                                                    name="167509"
+                                                    id="contact-service-167517"
+                                                    name="167517"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-167509" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-167517" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
