@@ -1061,11 +1061,48 @@
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
-        }"
-            x-init="loop"
-            class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-        >
+    }"
+        x-init="loop"
+        class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+    >
         <!-- Transition Wrapper 1 -->
+        <!-- <div
+            class="absolute inset-0"
+            x-show="activeImage === 1"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/32dd878c-d0ec-4a63-8c23-8336880b00ee.mp4"
+                alt=""
+            />
+        </div> -->
+        <!-- Transition Wrapper 2 -->
+        <!-- TODO: Add x-cloak to all transition wrappers exept the first one to avoid a flashing on load -->
+        <!-- <div
+            x-cloak
+            class="absolute inset-0"
+            x-show="activeImage === 2"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80"
+                alt=""
+            />
+        </div> -->
+
+        
         <div
             class="absolute inset-0"
             x-show="activeImage === 1"
@@ -1076,13 +1113,15 @@
             x-transition:leave-start="transform"
             x-transition:leave-end="transform -translate-x-full"
         >
-        
-            <video class="object-contain w-full lg:absolute h-80 lg:h-full" autoplay loop playsinline >
-            <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/edbd409feb661fa9200088c7d63edd92_Eiow3mq.mp4" type = "video/mp4" >
-            </video>
-        
-            
+            <img
+                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/32dd878c-d0ec-4a63-8c23-8336880b00ee.mp4"
+                loading="lazy"
+                alt="Auto Detailing company Fox Auto Spa / Ceramic Pro in Greeley, CO"
+            />
         </div>
+        
+        <!-- More images here -->
     </div>
     
 </div>
@@ -1180,7 +1219,7 @@
                           >
                               
                               <video class="w-auto h-auto max-h-full max-w-full" autoplay loop playsinline>
-                                  <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/c8a156f9-1298-487b-8c8d-fc6f1a88a1f0.mp4" type = "video/mp4" >
+                                  <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/79d11468-f71e-4949-aa48-531bd6cdd7bd.mp4" type = "video/mp4" >
                               </video>
                               
                           </div>
@@ -2584,7 +2623,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48234"
+                                aria-controls="48285"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2604,7 +2643,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48234">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48285">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +1 970-415-6270. Thanks!</p>
                         </dd>
@@ -2617,7 +2656,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48235"
+                                aria-controls="48286"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2637,7 +2676,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48235">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48286">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2650,7 +2689,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="48236"
+                                aria-controls="48287"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2670,7 +2709,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48236">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="48287">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -3259,46 +3298,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167382"
-                                                    name="167382"
+                                                    id="contact-service-167506"
+                                                    name="167506"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-167382" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-167506" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167383"
-                                                    name="167383"
+                                                    id="contact-service-167507"
+                                                    name="167507"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-167383" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-167507" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167384"
-                                                    name="167384"
+                                                    id="contact-service-167508"
+                                                    name="167508"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-167384" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-167508" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167385"
-                                                    name="167385"
+                                                    id="contact-service-167509"
+                                                    name="167509"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-167385" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-167509" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
@@ -3330,46 +3369,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167382"
-                                                    name="167382"
+                                                    id="contact-service-167506"
+                                                    name="167506"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-167382" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-167506" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167383"
-                                                    name="167383"
+                                                    id="contact-service-167507"
+                                                    name="167507"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-167383" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-167507" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167384"
-                                                    name="167384"
+                                                    id="contact-service-167508"
+                                                    name="167508"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-167384" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-167508" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-167385"
-                                                    name="167385"
+                                                    id="contact-service-167509"
+                                                    name="167509"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-167385" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-167509" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
