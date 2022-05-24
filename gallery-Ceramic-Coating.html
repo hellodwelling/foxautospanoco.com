@@ -1299,6 +1299,27 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
@@ -1318,34 +1339,13 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
                             
                         </div>
 
@@ -1509,7 +1509,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1517,7 +1517,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1525,7 +1525,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1990,46 +1990,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217814"
-                                                    name="217814"
+                                                    id="contact-service-217825"
+                                                    name="217825"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-217814" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-217825" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217815"
-                                                    name="217815"
+                                                    id="contact-service-217826"
+                                                    name="217826"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-217815" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-217826" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217816"
-                                                    name="217816"
+                                                    id="contact-service-217827"
+                                                    name="217827"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-217816" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-217827" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217817"
-                                                    name="217817"
+                                                    id="contact-service-217828"
+                                                    name="217828"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-217817" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-217828" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
@@ -2060,46 +2060,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217814"
-                                                    name="217814"
+                                                    id="contact-service-217825"
+                                                    name="217825"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-217814" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-217825" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217815"
-                                                    name="217815"
+                                                    id="contact-service-217826"
+                                                    name="217826"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-217815" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-217826" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217816"
-                                                    name="217816"
+                                                    id="contact-service-217827"
+                                                    name="217827"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-217816" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-217827" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217817"
-                                                    name="217817"
+                                                    id="contact-service-217828"
+                                                    name="217828"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-217817" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-217828" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
