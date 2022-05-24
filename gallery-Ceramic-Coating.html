@@ -1068,7 +1068,7 @@
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 14,
+        amountOfImages: 0,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1083,300 +1083,6 @@
     }"
 >
     <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4eda4c72-a972-4569-b759-d2d2bfa12dfc.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4eda4c72-a972-4569-b759-d2d2bfa12dfc.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4eda4c72-a972-4569-b759-d2d2bfa12dfc.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/4eda4c72-a972-4569-b759-d2d2bfa12dfc.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/41fcfb32-7990-4a5d-9f5f-07330a4c4302.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/41fcfb32-7990-4a5d-9f5f-07330a4c4302.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/41fcfb32-7990-4a5d-9f5f-07330a4c4302.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/41fcfb32-7990-4a5d-9f5f-07330a4c4302.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7eb89d0-86d3-46a6-a883-4c8f26ba30b1.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e7eb89d0-86d3-46a6-a883-4c8f26ba30b1.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7eb89d0-86d3-46a6-a883-4c8f26ba30b1.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e7eb89d0-86d3-46a6-a883-4c8f26ba30b1.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/66a8fb73-d576-4210-8cda-86003dfdd40c.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/66a8fb73-d576-4210-8cda-86003dfdd40c.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/66a8fb73-d576-4210-8cda-86003dfdd40c.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/66a8fb73-d576-4210-8cda-86003dfdd40c.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cdb91955-5dbf-4c3a-a62d-57c2d0bf0ebd.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/cdb91955-5dbf-4c3a-a62d-57c2d0bf0ebd.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cdb91955-5dbf-4c3a-a62d-57c2d0bf0ebd.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/cdb91955-5dbf-4c3a-a62d-57c2d0bf0ebd.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d8c75c9-5f89-467d-8411-61e3ce415861.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4d8c75c9-5f89-467d-8411-61e3ce415861.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d8c75c9-5f89-467d-8411-61e3ce415861.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/4d8c75c9-5f89-467d-8411-61e3ce415861.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dc703e6-7237-4c02-bf0b-9c14d9b3894d.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0dc703e6-7237-4c02-bf0b-9c14d9b3894d.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dc703e6-7237-4c02-bf0b-9c14d9b3894d.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0dc703e6-7237-4c02-bf0b-9c14d9b3894d.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/203c375e-0dc5-4e92-b56f-7d5201ddf60d.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/203c375e-0dc5-4e92-b56f-7d5201ddf60d.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/203c375e-0dc5-4e92-b56f-7d5201ddf60d.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/203c375e-0dc5-4e92-b56f-7d5201ddf60d.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d79f287c-441d-4a9d-8f47-24d632437306.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/d79f287c-441d-4a9d-8f47-24d632437306.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d79f287c-441d-4a9d-8f47-24d632437306.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/d79f287c-441d-4a9d-8f47-24d632437306.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 9; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/809658a8-ae0f-41a3-a7df-f2b5affa4e8e.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/809658a8-ae0f-41a3-a7df-f2b5affa4e8e.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/809658a8-ae0f-41a3-a7df-f2b5affa4e8e.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/809658a8-ae0f-41a3-a7df-f2b5affa4e8e.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 10; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 11; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 12; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 13; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1df252f9-2748-4b32-8859-a86bbf5887af.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/1df252f9-2748-4b32-8859-a86bbf5887af.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1df252f9-2748-4b32-8859-a86bbf5887af.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/1df252f9-2748-4b32-8859-a86bbf5887af.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
         
     </ul>
 
@@ -1425,118 +1131,6 @@
                             <span id="carousel-content-label" class="sr-only" hidden>Carousel</span>
 
                             <ul tabindex="0" role="listbox" aria-labelledby="carousel-content-label" class="relative w-full">
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 0">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4eda4c72-a972-4569-b759-d2d2bfa12dfc.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 1">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/41fcfb32-7990-4a5d-9f5f-07330a4c4302.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 2">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e7eb89d0-86d3-46a6-a883-4c8f26ba30b1.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 3">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/66a8fb73-d576-4210-8cda-86003dfdd40c.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 4">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cdb91955-5dbf-4c3a-a62d-57c2d0bf0ebd.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 5">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4d8c75c9-5f89-467d-8411-61e3ce415861.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 6">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dc703e6-7237-4c02-bf0b-9c14d9b3894d.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 7">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/203c375e-0dc5-4e92-b56f-7d5201ddf60d.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 8">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/d79f287c-441d-4a9d-8f47-24d632437306.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 9">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/809658a8-ae0f-41a3-a7df-f2b5affa4e8e.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 10">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8ac0d9a8-553a-47b8-a92e-3474c1aed016.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 11">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/101a5794-275f-485c-9ead-feee52968bb8.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 12">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/467c35a2-7a7a-46e3-be3e-efd966611fe7.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <!-- Transition Wrapper 1 -->
-                                    <li class="flex flex-col" x-show="activeImage === 13">
-                                            
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/1df252f9-2748-4b32-8859-a86bbf5887af.png" alt="Ceramic Coating for Fox Auto Spa / Ceramic Pro in Greeley, CO" loading="lazy"/>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
                                 
                             </ul>
 
@@ -1990,46 +1584,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217825"
-                                                    name="217825"
+                                                    id="contact-service-217878"
+                                                    name="217878"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-217825" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-217878" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217826"
-                                                    name="217826"
+                                                    id="contact-service-217879"
+                                                    name="217879"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-217826" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-217879" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217827"
-                                                    name="217827"
+                                                    id="contact-service-217880"
+                                                    name="217880"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-217827" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-217880" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217828"
-                                                    name="217828"
+                                                    id="contact-service-217881"
+                                                    name="217881"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-217828" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-217881" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
@@ -2060,46 +1654,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217825"
-                                                    name="217825"
+                                                    id="contact-service-217878"
+                                                    name="217878"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Window Tinting"
                                             />
-                                            <label for="contact-label-service-217825" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
+                                            <label for="contact-label-service-217878" class="ml-3 text-sm font-medium text-gray-700">Window Tinting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217826"
-                                                    name="217826"
+                                                    id="contact-service-217879"
+                                                    name="217879"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Vinyl Wrapping"
                                             />
-                                            <label for="contact-label-service-217826" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
+                                            <label for="contact-label-service-217879" class="ml-3 text-sm font-medium text-gray-700">Vinyl Wrapping</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217827"
-                                                    name="217827"
+                                                    id="contact-service-217880"
+                                                    name="217880"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Ceramic Coating"
                                             />
-                                            <label for="contact-label-service-217827" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
+                                            <label for="contact-label-service-217880" class="ml-3 text-sm font-medium text-gray-700">Ceramic Coating</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-217828"
-                                                    name="217828"
+                                                    id="contact-service-217881"
+                                                    name="217881"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paint Protection Film"
                                             />
-                                            <label for="contact-label-service-217828" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
+                                            <label for="contact-label-service-217881" class="ml-3 text-sm font-medium text-gray-700">Paint Protection Film</label>
                                         </div>
                                         
                                     </div>
